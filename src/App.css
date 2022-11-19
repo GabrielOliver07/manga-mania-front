@@ -26,7 +26,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-image: url(https://www.figma.com/file/zy6I5uSQ89F2opEXht9hbf/Projeto-Manga-Mania?node-id=403%3A481);
 }
 
 .menu h3{
@@ -93,6 +92,7 @@ background-color: gray;
   color: black;
   text-transform: uppercase;
   font-size: 28px;
+  border-radius: 5px;
 }
 
 .items-form{
