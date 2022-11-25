@@ -1,5 +1,5 @@
-import { FaUserPlus } from "react-icons/fa";
-import { Link } from "react-router-dom";
+// import { FaUserPlus } from "react-icons/fa";
+// import { Link } from "react-router-dom";
 
 
 function UserNavBar() {
@@ -15,7 +15,7 @@ function UserNavBar() {
                     <div className="item-menu">
                         {/* <FaUserPlus /> */}
                         <h1 href="#">Logado</h1>
-                        
+
                     </div>
                 </div>
                 <div className="pesquisa">

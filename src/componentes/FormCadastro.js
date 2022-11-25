@@ -12,6 +12,6 @@ function FormCadastro() {
                 </div>
             </form>
         </div>
-        )
+    )
 }
 export default FormCadastro;

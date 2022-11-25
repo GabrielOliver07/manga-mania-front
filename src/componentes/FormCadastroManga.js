@@ -16,6 +16,6 @@ function FormCadastroManga() {
                 </div>
             </form>
         </div>
-        )
+    )
 }
 export default FormCadastroManga;
