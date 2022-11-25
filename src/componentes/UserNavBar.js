@@ -20,8 +20,7 @@ function UserNavBar() {
                 </div>
                 <div className="pesquisa">
                     <h1 href="#">Mangás</h1>
-                    <h2 href="#">Categorias</h2>
-                    <h3 href="#">Add Manga</h3>
+                    <h2 href="#">Add Manga</h2>
                 </div>
             </div>
         </div>

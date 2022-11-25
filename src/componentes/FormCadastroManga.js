@@ -11,6 +11,7 @@ function FormCadastroManga() {
                     <input placeholder="Categoria..." type="text" />
                     <input placeholder="Nome do autor ..." type="test" />
                     <input placeholder="Numero de capitulos ..." type="test" />
+                    <input placeholder="Add img ..." type="URL" />
                     <input type="submit" />
                 </div>
             </form>

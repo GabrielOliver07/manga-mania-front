@@ -1,26 +1,24 @@
-import NavBar from './componentes/NavBar';
-import FormCadastro from './componentes/FormCadastro';
-import Login from './componentes/Login';
+import Login from './pages/Login';
 import './App.css';
-import {Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
-import UserNavBar from './componentes/UserNavBar';
-import FormCadastroManga from './componentes/FormCadastroManga';
+import Cadastro from './pages/Cadastro';
+import UserHome from './pages/UserHome';
+import NewManga from './pages/NewManga';
 
 
 function App() {
   return (
     <div className="App">
-       <NavBar />
-       
+    
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/cadastro" element={<Cadastro />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/manga/new" element={<NewManga />} />
+        <Route path="/user" element={<UserHome />} />
 
       </Routes>
-     
-      <UserNavBar/>
-      <FormCadastroManga/>
-
     </div>
   );
 }
