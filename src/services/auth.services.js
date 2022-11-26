@@ -17,7 +17,7 @@ class AuthService {
 
     //add usuario
     createUser = async (requestBody) => {
-        return this.api.post('/auth', requestBody);
+        return this.api.post('/auth/cadastro', requestBody);
     }
 
     //login do usuario

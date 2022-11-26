@@ -1,7 +1,7 @@
 import "./NewManga.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import authService from "../../services/auth.services";
+import mangaServices from "../../services/manga.services"
 
 // import FormCadastroManga from "../../componentes/FormCadastroManga";
 import UserNavBar from "../../componentes/UserNavBar";
@@ -13,7 +13,7 @@ function NewManga() {
     const [status, setStatus] = useState("");
     const [category, setCategory] = useState("");
     const [author, setAuthor] = useState("");
-    const [numberOfChapter, setNumberOfChapter] = useState("");
+    const [numberOfChapters, setNumberOfChapters] = useState("");
     const [coverImageUrl, setCoverImageUrl] = useState("");
 
     const navigate = useNavigate();
@@ -24,18 +24,18 @@ function NewManga() {
     const handleStatus = (e) => setStatus(e.target.value);
     const handleCategory = (e) => setCategory(e.target.value);
     const handleAuthor = (e) => setAuthor(e.target.value);
-    const handleNumberOfChapter = (e) => setNumberOfChapter(e.target.value);
+    const handleNumberOfChapters = (e) => setNumberOfChapters(e.target.value);
     const handleCoverImageUrl = (e) => setCoverImageUrl(e.target.value);
 
     const handleSignupSubmit = (e) => {
         e.preventDefault();
 
-        const requestBody = { name, description, publicationYear, status, category, author, numberOfChapter, coverImageUrl };
+        const requestBody = { name, description, publicationYear, status, category, author, numberOfChapters, coverImageUrl };
 
-        authService
-            .signup(requestBody)
+        mangaServices
+            .createOne(requestBody)
             .then((response) => {
-                navigate("/manga/");
+                navigate("/manga");
             })
             .catch((error) => {
                 console.error(error)
@@ -58,7 +58,7 @@ function NewManga() {
                     <label>Description:</label>
                     <input type="text" name="description" value={description} onChange={handleDescription} />
 
-                    <label>PublicationYear:</label>
+                    <label>Publication Year:</label>
                     <input type="text" name="publicationYear" value={publicationYear} onChange={handlePublicationYear} />
 
                     <label>Status:</label>
@@ -70,10 +70,10 @@ function NewManga() {
                     <label>Author:</label>
                     <input type="text" name="author" value={author} onChange={handleAuthor} />
 
-                    <label>NumberOfChapter:</label>
-                    <input type="text" name="numberOfChapter" value={numberOfChapter} onChange={handleNumberOfChapter} />
+                    <label>Number Of Chapters: </label>
+                    <input type="text" name="numberOfChapters" value={numberOfChapters} onChange={handleNumberOfChapters} />
 
-                    <label>CoverImageUrl:</label>
+                    <label>Cover Image Url:</label>
                     <input type="text" name="coverImageUrl" value={coverImageUrl} onChange={handleCoverImageUrl} />
 
 
