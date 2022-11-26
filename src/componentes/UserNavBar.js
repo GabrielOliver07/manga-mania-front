@@ -19,8 +19,15 @@ function UserNavBar() {
                     </div>
                 </div>
                 <div className="pesquisa">
-                    <h1 href="#">Mangás</h1>
-                    <h2 href="#">Add Manga</h2>
+
+                    {/* <Link to="/"> */}
+                        <button className="pesquisa1">Mangás</button>
+                    {/* </Link> */}
+                    
+                    {/* <Link to="/manga/new"> */}
+                        <button className="pesquisa2">Add Mangá</button>
+                    {/* </Link> */}
+                    
                 </div>
             </div>
         </div>

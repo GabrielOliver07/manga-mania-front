@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    padding: 2px;
+    margin: 2px;
+}
+.handleSignupSubmit{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    color: blue;
+    font-weight: bold;
+    padding: 20%;
+
+}
+
+.SignupPage h1{
+    display: flex;
+    color: white;
+    text-transform: uppercase;
+    font-size: 28px;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: black
+}
+
+.SignupPage p{
+    display: flex;
+    color: white;
+    text-transform: uppercase;
+    font-size: 28px;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: black
+}
+.SignupPage link {
+    display: flex;
+    color: white;
+    text-transform: uppercase;
+    font-size: 28px;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: black
+}
+
+.Form{
+    background-color: gray;
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    margin: 10px auto;
+    border-radius: 5px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}

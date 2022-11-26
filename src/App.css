@@ -15,7 +15,7 @@
   
   padding: 40px 0px;
   width: 100%;
-  min-height: 10px;
+  min-height: 100px;
   background-size: 100%;
   font-size: 22px;
   line-height: 60px;
@@ -35,7 +35,7 @@
   cursor: pointer;
 }
 
-.menu h1{
+.item-menu h1{
   color: white;
   text-decoration: none;
   border: 1px solid white;
@@ -43,7 +43,16 @@
   border-radius: 5px;
   cursor: pointer;
 }
-.menu h2{
+
+.cadastro{
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 3px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login{
   color: white;
   text-decoration: none;
   border: 1px solid white;
@@ -56,7 +65,7 @@
   display: flex;
   padding: 10px 0px;
   width: 100%;
-  background-color: black;
+  
   min-height: 50px;
   align-content: space-around;
   flex-wrap: wrap;
@@ -65,14 +74,14 @@
   cursor: pointer;
 }
 
-.pesquisa h1{
+.pesquisa1{
   color: white;
   text-decoration: none;
   border: 1px solid white;
   padding: 3px 8px;
   border-radius: 5px;
 }
-.pesquisa h2{
+.pesquisa2{
   color: white;
   text-decoration: none;
   border: 1px solid white;

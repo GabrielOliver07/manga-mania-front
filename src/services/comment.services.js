@@ -2,7 +2,7 @@ import axios from "axios";
 class Comment {
     constructor(){
         this.api=axios.create({
-            baseURL: process.env.REACT_APP_SERVER_URL || "http://localhost:5000/comment"
+            baseURL: `${process.env.REACT_APP_SERVER_URL}/comment` || "http://localhost:5000/comment"
         })
 
         this.api.interceptors.request.use((config) =>{
@@ -27,12 +27,12 @@ getAll = async (requestBody) =>{
 
 //editar comentario
 edit = async (id,requestBody) =>{
-    return this.api.put(`/comment${id}`, requestBody);
+    return this.api.put(`/${id}`, requestBody);
 }
 
 //excluir um comentario
 deleteComment = async (id) =>{
-    return this.api.delete(`/comment${id}`);
+    return this.api.delete(`/${id}`);
 }
 
 const comment = new Comment();

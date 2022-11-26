@@ -1,10 +1,13 @@
-import Login from './pages/Login';
+// import Login from './pages/Login';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import Cadastro from './pages/Cadastro';
-import UserHome from './pages/UserHome';
-import NewManga from './pages/NewManga';
+import HomePage from './pages/home-page/HomePage';
+// import Cadastro from './pages/Cadastro';
+// import UserHome from './pages/UserHome';
+import NewManga from './pages/new-manga/NewManga';
+import SignupPage from './pages/singup-page/SignupPage';
+import LoginPage from './pages/login-page/LoginPage';
+import ProfilePage from './pages/profile-page/ProfilePage';
 
 
 function App() {
@@ -12,11 +15,11 @@ function App() {
     <div className="App">
     
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/cadastro" element={<Cadastro />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/cadastro" element={<SignupPage />} />
+        <Route path="/login" element={<LoginPage />} />
         <Route path="/manga/new" element={<NewManga />} />
-        <Route path="/user" element={<UserHome />} />
+        <Route path="/user" element={<ProfilePage />} />
 
       </Routes>
     </div>
