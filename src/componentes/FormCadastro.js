@@ -1,7 +1,7 @@
 function FormCadastro() {
     return (
         <div className="form">
-            <h2>Cadastre-se</h2>
+            <h2>Create an account</h2>
             <form>
                 <div className="items-form">
                     <input placeholder="Nome de usuário..." type="text" />

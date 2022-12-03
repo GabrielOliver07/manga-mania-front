@@ -1,5 +1,5 @@
 // import { FaUserPlus } from "react-icons/fa";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 function UserNavBar() {
@@ -9,7 +9,7 @@ function UserNavBar() {
             <div className="center">
                 <div className="menu">
                     <div className="logo">
-                        <h3>Manga mania</h3>
+                        <h3>Mangá Mania</h3>
                     </div>
 
                     <div className="item-menu">
@@ -20,13 +20,13 @@ function UserNavBar() {
                 </div>
                 <div className="pesquisa">
 
-                    {/* <Link to="/"> */}
+                    <Link to="/manga/">
                         <button className="pesquisa1">Mangás</button>
-                    {/* </Link> */}
+                    </Link>
                     
-                    {/* <Link to="/manga/new"> */}
+                    <Link to="/manga/new">
                         <button className="pesquisa2">Add Mangá</button>
-                    {/* </Link> */}
+                    </Link>
                     
                 </div>
             </div>

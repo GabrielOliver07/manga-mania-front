@@ -8,6 +8,9 @@ import NewManga from './pages/new-manga/NewManga';
 import SignupPage from './pages/singup-page/SignupPage';
 import LoginPage from './pages/login-page/LoginPage';
 import ProfilePage from './pages/profile-page/ProfilePage';
+import AllManga from './pages/mangas/AllManga';
+// import OneManga from './componentes/FormOneManga';
+
 
 
 function App() {
@@ -20,6 +23,12 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/manga/new" element={<NewManga />} />
         <Route path="/user" element={<ProfilePage />} />
+        <Route path="/manga" element={<AllManga />} />
+        {/* <Route path="/manga/:mangaId" element={<OneManga />} /> */}
+
+       
+       
+        
 
       </Routes>
     </div>

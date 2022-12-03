@@ -3,6 +3,19 @@
     padding: 2px;
     margin: 2px;
 }
+
+.main{
+  
+    padding: 40px 0px;
+    width: 100%;
+    min-height: 100px;
+    background-size: 100%;
+    font-size: 22px;
+    line-height: 60px;
+    transition: margin-top .15s ease-out;
+    background-image: url(https://s3.amazonaws.com/plugcrm-app/5d430b7bf8381400224ccc82/deal_file/6372c71459444f001617d80b.jpg);
+  } 
+
 .SignupPage{
     width: 100%;
     display: flex;
@@ -15,7 +28,7 @@
     color: blue;
     font-weight: bold;
     padding: 5%;
-
+    background-image: url(https://s3.amazonaws.com/plugcrm-app/5d430b7bf8381400224ccc82/deal_file/638a7cb68608270023594f7d.gif);
 }
 
 .SignupPage h1{
