@@ -1,5 +1,5 @@
 
-import FormList from "./../../componentes/FormList"
+import FormList from "../../componentes/MangaList"
 import UserNavBar from "../../componentes/UserNavBar";
 
 function AllManga() {
